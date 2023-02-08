@@ -1,4 +1,4 @@
-<div class="tags">
+<div class="list-tags">
   <ul>
     {{ range .Params.projects_tags }}
       {{ $tag := partial "GetTaxonomy" (dict "slug" . "taxonomy" "projects_tags")  }}
