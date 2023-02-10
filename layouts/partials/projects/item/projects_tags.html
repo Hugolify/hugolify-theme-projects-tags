@@ -1,10 +1,9 @@
-<div class="list-tags">
-  <ul>
-    {{ range .Params.projects_tags }}
-      {{ $tag := partial "func/GetTaxonomy" (dict "slug" . "taxonomy" "projects_tags")  }}
-      {{ with $tag }}
+{{ with .GetTerms "projects_tags" }}
+  <div class="list-tags">
+    <ul>
+      {{ range . }}
         <li>{{ .Title }}</li>
       {{ end }}
-    {{ end }}
-  </ul>
-</div>
+    </ul>
+  </div>
+{{ end }}
