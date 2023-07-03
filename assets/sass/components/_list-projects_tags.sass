@@ -1,0 +1,27 @@
+.list-projects_tags
+    p
+        margin-bottom: .5rem
+    ul, ol
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        list-style: none
+        margin: -.5rem 0 0
+        padding: 0
+    li
+        line-height: 1
+        margin: .5rem .5rem 0 0
+        &::before
+            content: none
+        a
+            --bs-badge-color: white
+            @extend .badge
+            background-color: $secondary
+            text-decoration: none
+
+section + .list-projects_tags
+    border-top: 1px solid $border-color
+    margin-top: $global-spacing
+    padding-top: calc(#{$global-spacing} / 2)
+    p
+        @extend .h5
