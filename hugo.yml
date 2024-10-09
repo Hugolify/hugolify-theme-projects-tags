@@ -16,3 +16,8 @@ permalinks:
   projects_tags: /projects/tags/:slug/
 taxonomies:
   projects_tag: projects_tags
+
+params:
+  admin:
+    collections:
+      projects_tags: true
