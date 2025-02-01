@@ -13,10 +13,14 @@ module:
 
 # Default
 permalinks:
-  projects_tags: /projects/tags/:slug/
+  taxonomy:
+    projects_tags: /projects/tags/
+  term:
+    projects_tags: /projects/tags/:slug/
 taxonomies:
   projects_tag: projects_tags
 
+# Params
 params:
   admin:
     collections:
