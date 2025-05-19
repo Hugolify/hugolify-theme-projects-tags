@@ -20,9 +20,14 @@ permalinks:
 taxonomies:
   projects_tag: projects_tags
 
-# Params
+# Admin
 params:
   admin:
     collections:
       projects_tags:
         enable: true
+        filter:
+          - field: isIndex
+            value: false
+        icon:
+          sveltiacms: bookmarks
