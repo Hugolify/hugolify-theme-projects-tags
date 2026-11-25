@@ -1,0 +1,11 @@
+/* components/projects-tag.css */
+/*
+ * Usage: <article class="item projects_tag">
+ */
+@layer components {
+  .projects_tag {
+    .btn {
+      display: none;
+    }
+  }
+}

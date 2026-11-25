@@ -1,0 +1,12 @@
+/* css/modules/projects-tags.css: hugolify-theme-projects-tags entry point */
+
+/* Tokens */
+@import '../tokens/projects-tags.css';
+
+/* Components */
+@import '../components/projects-tag.css';
+@import '../components/projects-tags.css';
+
+/* Pages */
+@import '../pages/projects-tag.css';
+@import '../pages/projects-tags.css';
